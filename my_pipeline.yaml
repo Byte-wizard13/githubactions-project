@@ -1,14 +1,14 @@
 name: GitHub Actions Demo
 
-# १. ही पाईपलाईन कधी सुरू होणार? (जेव्हा कोड Push होईल)
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build-and-test:
-    # २. हा कोड कोणत्या कम्प्युटरवर चालणार?
     runs-on: ubuntu-latest
 
-    # ३. काय काम करायचे आहे? (Steps)
     steps:
       - name: GitHub वरून कोड कॉपी करा
         uses: actions/checkout@v4
