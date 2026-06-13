@@ -1,0 +1,9 @@
+name: DevOps-Demo
+on: [push, workflow_dispatch]
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing
+        run: echo "Hello DevOps World! My Pipeline is Working!"
